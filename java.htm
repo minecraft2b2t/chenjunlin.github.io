@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Java Download</title>
+</head>
+<body>
+    <div class="footer">
+        <div class="container">
+            <div id="Main">
+                <script type="text/javascript">
+                    window.onload=function()
+                    {
+                        window.requestAnimationFrame(getDate)
+                    }
+                        function getDate()
+                    {
+                        window.setTimeout(function(){
+                        window.requestAnimationFrame(getDate)
+                    },1000/2) 
+                    var d=new Date();   
+                    var year=d.getFullYear()  
+                    var month=d.getMonth()+1;  
+                    var day=d.getDay()   
+                    var days=d.getDate() 
+                    var hour=d.getHours()    
+                    var minute=d.getMinutes()   
+                    var second=d.getSeconds()    
+                    if(month<10) month="0"+month 
+                    if(days<10) days="0"+days 
+                    if(hour<10) hour="0"+hour 
+                    if(minute<10) minute="0"+minute 
+                    if(second<10) second="0"+second 
+                    var week=new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六")
+                    var Tools=document.getElementById("Main")
+                    var da=year+" 年 "+month+" 月 "+days+" 日 "+week[day]+" "+hour+" : "+minute+" :"+second
+                    Tools.innerHTML=da
+                    }
+                    </script>
+            </div>
+        </div>
+    </div>
+    <h4>file server—>minecraft—>java</h4>
+    <h1>——————————————————————————————————————————————————————————————</h1>
+    <p><a href="java/java7.htm">java7</a></p>
+    <p><a href="java/java8.htm">java8</a></p>
+    <p><a href="java/java11.htm">java11</a></p>
+    <p><a href="java/java16.htm">java16</a></p>
+    <p><a href="java/java17.htm">java17</a></p>
+    <p><a href="java/java18.htm">java18</a></p>
+    <p><a href="java/java19.htm">java19</a></p>
+    <p><a href="http://www.codebaoku.com/jdk/jdk-oracle-account.html">Oracle共享账号</a></p>
+
+    <p><a href="minecraft.htm">返回</a></p>
+    <p><a href="old/index.html">回到旧版</a></p>
+
+</body>
+</html>
